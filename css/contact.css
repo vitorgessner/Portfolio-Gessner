@@ -1,0 +1,206 @@
+body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F5F0;
+    color: #00361b;
+    width: 100%;
+}
+
+.header--main {
+    display: flex;
+    align-items: center; 
+    padding-inline: 4.74rem;
+    height: 100px;
+    box-shadow: 0 1px 5px #00000021;
+}
+
+.header--main nav{
+    flex: 1;
+}
+
+.header--main nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header--main__pages{
+    gap: 1.75rem;
+    font-size: 1.09rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.header--main__pages a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 250ms;
+}
+
+.header--main__pages a[href^="contact"]{
+    color: #b2d12c;
+    font-weight: 500;
+}
+
+.header--main__pages a:hover:not(a[href^="contact"]) {
+    color: #e85a2a;
+}
+
+.header--main h1 a{
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    color: #e85a2a;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.header--main h1 a:hover {
+    color: #b2d12c;
+}
+
+.header--main__social {
+    gap: 1.55rem;
+    justify-content: right;
+}
+
+.header--main__social li img{
+    width: 0.9rem;
+    opacity: 0;
+}
+
+.header--main__social a {
+    background-size: 0.9rem;
+    background-repeat: no-repeat;
+    transition: all 250ms;
+}
+
+.header--main__social a:has(img[alt$="Linkedin"]){
+    background-image: url(../imagens/linkedin-verde.png);
+}
+.header--main__social a:has(img[alt$="Instagram"]){
+    background-image: url(../imagens/insta-verde.png);
+}
+.header--main__social a:has(img[alt$="Vimeo"]){
+    background-image: url(../imagens/vimeo-verde.png);
+}
+
+.header--main__social a:has(img[alt$="Linkedin"]):hover{
+    background-image: url(../imagens/linkedin-laranja.png);
+}
+.header--main__social a:has(img[alt$="Instagram"]):hover{
+    background-image: url(../imagens/insta-laranja.png);
+}
+.header--main__social a:has(img[alt$="Vimeo"]):hover{
+    background-image: url(../imagens/vimeo-laranja.png);
+}
+
+
+.bg {
+    background-image: url(../imagens/GabrieleGessner-COVER.png);
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+}
+
+.contact--wrapper {
+    display: flex;
+    margin: 2rem 4.74rem;
+}
+
+.contact--content {
+    flex: 1;
+}
+
+.contact--content__title, .email, label {
+    color: #e85a2a;
+}
+
+.email {
+    font-weight: 400;
+}
+
+.contact--content__title, label{
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+    margin: 0;
+}
+
+.contact--content p {
+    margin: 0 0 4rem;
+    font-weight: 300;
+    font-size: 0.97rem;
+}
+
+.contact--form {
+    flex: 1;
+}
+
+.contact--form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact--form form input, .contact--form form textarea {
+    font-size: 1rem;
+    background-color: #FAF9F6;
+    border: 1px solid #dddd;
+    color: #00361b;
+    padding: 0.7rem 0.5rem;
+    margin: 0.3rem 0 1rem;
+    font-weight: 200;
+    font-family: Poppins;
+    font-size: 0.95rem;
+    border-radius: 3px;
+}
+
+.contact--form form textarea {
+    height: 6rem;
+}
+
+.contact--form form input::placeholder , .contact--form form textarea::placeholder {
+    font-weight: 200;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.contact--form form input, .contact--form form textarea:focus {
+    outline: none;
+}
+
+.contact--form form input[type="submit"]{
+    background-color: #e85a2a;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: .5;
+    letter-spacing: -0.8px;
+    width: fit-content;
+    padding: 0.4rem 1.7rem;
+    border-radius: 5px;
+}
+
+.contact--form form input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.footer--main {
+    color: #c998e8;
+    text-align: center;
+    padding: 2.5em;
+}
+
+.footer--main p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -1.3px;
+    font-size: 0.95em;
+}

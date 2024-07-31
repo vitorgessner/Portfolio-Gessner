@@ -1,0 +1,178 @@
+body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #faf9f6;
+    color: #00361b;
+    width: 100%;
+}
+
+.header--main {
+    display: flex;
+    align-items: center; 
+    padding-inline: 4.74rem;
+    height: 100px;
+    box-shadow: 0 1px 5px #00000021;
+}
+
+.header--main nav{
+    flex: 1;
+}
+
+.header--main nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header--main__pages{
+    gap: 1.75rem;
+    font-size: 1.09rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.header--main__pages a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 250ms;
+}
+
+.header--main__pages a[href^="index"]{
+    color: #b2d12c;
+    font-weight: 500;
+}
+
+.header--main__pages a:hover:not(a[href^="index"]) {
+    color: #e85a2a;
+}
+
+.header--main h1 a{
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    color: #e85a2a;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.header--main h1 a:hover {
+    color: #b2d12c;
+}
+
+.header--main__social {
+    gap: 1.55rem;
+    justify-content: right;
+}
+
+.header--main__social li img{
+    width: .9rem;
+    opacity: 0;
+}
+
+.header--main__social a {
+    background-size: 0.9rem;
+    background-repeat: no-repeat;
+    transition: all 250ms;
+}
+
+.header--main__social a:has(img[alt$="Linkedin"]){
+    background-image: url(../imagens/linkedin-verde.png);
+}
+.header--main__social a:has(img[alt$="Instagram"]){
+    background-image: url(../imagens/insta-verde.png);
+}
+.header--main__social a:has(img[alt$="Vimeo"]){
+    background-image: url(../imagens/vimeo-verde.png);
+}
+
+.header--main__social a:has(img[alt$="Linkedin"]):hover{
+    background-image: url(../imagens/linkedin-laranja.png);
+}
+.header--main__social a:has(img[alt$="Instagram"]):hover{
+    background-image: url(../imagens/insta-laranja.png);
+}
+.header--main__social a:has(img[alt$="Vimeo"]):hover{
+    background-image: url(../imagens/vimeo-laranja.png);
+}
+
+.main--work {
+    display: flex;
+}
+
+.main--work article {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main--work__eco {
+    background-image: url(../imagens/Ecossistemas-da-Inovacao-SHOT-01.gif); 
+}
+.main--work__lara {
+    background-image: url(../imagens/Lara-a-Lagarta-SHOT-03.gif);
+}
+.main--work__ppga {
+    background-image: url(../imagens/PPGA-20-Anos-SHOT-02.gif);
+}
+
+.main--work article a img {
+    width: 100%;
+    display: block;
+    opacity: 0;
+    transition: all 200ms ease;
+}
+
+.main--work a {
+    position: relative;
+}
+
+.work--content {
+    position: absolute;
+    z-index: 1;
+    background-color: #00361ba2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 200ms ease;
+}
+
+.main--work article a:hover img, .main--work article a:hover .work--content {
+    opacity: 1;
+}
+
+.work--content__title, .work--content__p {
+    margin: -0.25em;
+}
+
+.work--content__title {
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.work--content__p {
+    font-weight: 300;
+    font-size: 0.85em;
+}
+
+.footer--main {
+    color: #c998e8;
+    text-align: center;
+    padding: 2.5em;
+}
+
+.footer--main p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -1.3px;
+    font-size: 0.95em;
+}

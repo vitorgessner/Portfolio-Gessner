@@ -1,0 +1,175 @@
+body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F5F0;
+    color: #00361b;
+    width: 100%;
+}
+
+.header--main {
+    display: flex;
+    align-items: center; 
+    padding-inline: 4.74rem;
+    height: 100px;
+    box-shadow: 0 1px 5px #00000021;
+}
+
+.header--main nav{
+    flex: 1;
+}
+
+.header--main nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header--main__pages{
+    gap: 1.75rem;
+    font-size: 1.09rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.header--main__pages a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 250ms;
+}
+
+.header--main__pages a[href^="about"]{
+    color: #b2d12c;
+    font-weight: 500;
+}
+
+.header--main__pages a:hover:not(a[href^="about"]) {
+    color: #e85a2a;
+}
+
+.header--main h1 a{
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    color: #e85a2a;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.header--main h1 a:hover {
+    color: #b2d12c;
+}
+
+.header--main__social {
+    gap: 1.55rem;
+    justify-content: right;
+}
+
+.header--main__social li img{
+    width: 0.9rem;
+    opacity: 0;
+}
+
+.header--main__social a {
+    background-size: 0.9rem;
+    background-repeat: no-repeat;
+    transition: all 250ms;
+}
+
+.header--main__social a:has(img[alt$="Linkedin"]){
+    background-image: url(../imagens/linkedin-verde.png);
+}
+.header--main__social a:has(img[alt$="Instagram"]){
+    background-image: url(../imagens/insta-verde.png);
+}
+.header--main__social a:has(img[alt$="Vimeo"]){
+    background-image: url(../imagens/vimeo-verde.png);
+}
+
+.header--main__social a:has(img[alt$="Linkedin"]):hover{
+    background-image: url(../imagens/linkedin-laranja.png);
+}
+.header--main__social a:has(img[alt$="Instagram"]):hover{
+    background-image: url(../imagens/insta-laranja.png);
+}
+.header--main__social a:has(img[alt$="Vimeo"]):hover{
+    background-image: url(../imagens/vimeo-laranja.png);
+}
+
+
+.about--wrapper, .about--wrapper__pt {
+    display: flex;
+    margin: 0 4.74rem;
+}
+
+.about--wrapper {
+    gap: 0.8rem;
+}
+
+.about--wrapper__pt {
+    gap: 6.5rem;
+    margin-top: 1.5rem;
+}
+
+.about--title, .about--title__pt, .email {
+    color: #e85a2a;
+}
+
+.about--title, .about--title__pt {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+    margin-bottom: 0.1rem;
+}
+
+.about--title:not(:last-of-type){
+    margin: 3rem 0 0.2rem;
+}
+
+.about--title__pt {
+    margin: 0;
+}
+
+.about--english p, .about--pt p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    margin: 0 0 2rem;
+}
+
+.about--english__img img{
+    width: 42.5rem;
+}
+
+.about--pt__img {
+    margin-left: 6rem;
+}
+
+.about--pt__img img{
+    height: 27.915rem;
+}
+
+.about--english ul, .about--pt ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.footer--main {
+    color: #c998e8;
+    text-align: center;
+    padding: 2.5em;
+}
+
+.footer--main p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -1.3px;
+    font-size: 0.95em;
+}
